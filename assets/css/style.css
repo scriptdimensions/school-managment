@@ -10,7 +10,7 @@
     --sans: "Open Sans", sans-serif;
     --nunito: "Nunito", sans-serif;
     --Inter: "Inter", sans-serif;
-    --dashblue: #20B573;
+    --dashblue: #152942;
     --gray900: #101828;
     --gray700: #344054;
     --gray600: #475467;
@@ -202,6 +202,7 @@ body {
     position: fixed;
     inset: 72px auto 0px 0px;
     display: flex;
+    z-index: 999;
 }
 
 .sidebar .icon-bar {
@@ -673,7 +674,6 @@ body {
 }
 
 .table-wraper {
-    max-width: 1440px;
     margin: auto;
     border: 1px solid var(--gray200);
     border-radius: 4px;
@@ -802,10 +802,11 @@ body {
     padding: 9px 0px;
     border-bottom: 1px solid var(--gray200);
 }
-.table-wraper .head ul li{
+.table-wraper  ul li {
     font-size: 14px;
     color: var(--gray600);
-    text-transform: capitalize;  
+    text-transform: capitalize;
+    padding: 0px 10px;
 }
 .table-search {
     position: relative;
