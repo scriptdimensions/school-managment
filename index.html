@@ -18,7 +18,7 @@
             <div class="menu-icon"><img src="assets/images/menu.svg" alt="menu"></div>
             <a href="#" class="logo-wraper">
                 <img src="assets/images/nifayh-logo.svg" alt="logo" class="logo">
-                <h4>nafyh</h4>
+                <h4>class management</h4>
                 <span class="location">PK</span>
             </a>
             <div class="right">
@@ -96,19 +96,16 @@
                 <ul>
                     <li class="item active">
                         <span class="span">
-                            <span class="text">dashboard</span>
+                            <span class="text" data="dashboard-home">dashboard</span>
                         </span>
                     </li>
                     <li class="item">
                         <span class="span">
-                            <span class="text">students</span>
+                            <span class="text" data="all-students">students</span>
                             <img src="assets/images/arrow-down.svg" alt="arrow">
                         </span>
                         <ul class="sub">
-                            <li>students</li>
-                            <li>students</li>
-                            <li>students</li>
-                            <li>students</li>
+                            <li data="add-form">add students</li>
                         </ul>
                     </li>
                     <li class="item">
@@ -120,7 +117,127 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="registration-from">
+            <div class="dashboard-home content-tab" data="dashboard-home" style="display: block;">
+                dashboard-home
+            </div>
+            <div class="student-table content-tab" data="all-students">
+                <div class='table-wraper'>
+                    <div class="d-flex">
+                        <button class="filter"></button>
+                        <div class="table-search"><input type="text" placeholder="Search..." id="filterInput"></div>
+                        <div class="right"><button class="dote"></button></div>
+                    </div>
+                    <div class='tables'>
+                        <div class="head">
+                            <ul>
+                                <li class="name">name</li>
+                                <li class="status">status</li>
+                                <li>Registration Id</li>
+                                <li>B-Form Number</li>
+                                <li>Address</li>
+                                <li class='manipulate'>delete / edit</li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Ann Culhane</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Ahmad Rosser</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Zain Calzoni</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Leo Stanton</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Corey Stanton</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                        <ul>
+                            <li class="user-name-wraper">
+                                <div class="user-name"><span class="icon"></span>
+                                    <div>
+                                        <h5 class="title">Ann Culhane</h5>
+                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="status"><span>active</span></li>
+                            <li class="number">2023001234</li>
+                            <li class="number">12345-6789012-3</li>
+                            <li class="number">Street Name, City</li>
+                            <li class="manipulate"><button class="delete button"></button><button
+                                    class="edit button"></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="registration-from content-tab" data="add-form">
                 <div class="form">
                     <form action="">
                         <div class="preview-container">
@@ -131,20 +248,51 @@
                         <div class="form-row">
                             <div class="input-wraper">
                                 <label for="" class="label">full name</label>
-                                <input type="text" placeholder="" class="input">
+                                <input type="text" placeholder="John Doe" class="input">
                             </div>
                             <div class="input-wraper">
                                 <label for="" class="label">father name</label>
-                                <input type="text" placeholder="" class="input">
+                                <input type="text" placeholder="Michael Doe" class="input">
                             </div>
-                        </div>  <div class="form-row">
+                        </div>
+                        <div class="form-row">
                             <div class="input-wraper">
                                 <label for="" class="label">phone number</label>
-                                <input type="number" placeholder="" class="input">
+                                <input type="number" placeholder="0300-1234567" class="input">
                             </div>
                             <div class="input-wraper">
                                 <label for="" class="label">email</label>
-                                <input type="email" placeholder="" class="input">
+                                <input type="email" placeholder="example@gmail.com" class="input">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-wraper">
+                                <label for="" class="label">Father CNIC Number</label>
+                                <input type="number" placeholder="12345-6789012-3" class="input">
+                            </div>
+                            <div class="input-wraper">
+                                <label for="" class="label">Date Of Birth</label>
+                                <input type="date" placeholder="01/01/2000" class="input">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-wraper">
+                                <label for="" class="label">Registration Id</label>
+                                <input type="number" placeholder="2023001234" class="input">
+                            </div>
+                            <div class="input-wraper">
+                                <label for="" class="label">B-Form Number</label>
+                                <input type="text" placeholder="12345-6789012-3" class="input">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-wraper">
+                                <label for="" class="label">Whatsapp Number</label>
+                                <input type="number" placeholder="0300-1234567" class="input">
+                            </div>
+                            <div class="input-wraper">
+                                <label for="" class="label">Religion</label>
+                                <input type="text" placeholder="Islam/Christianity/Hinduism" class="input">
                             </div>
                         </div>
                         <div class="form-row">
@@ -163,7 +311,7 @@
                                     <option value="Class 10">Class 10</option>
                                 </select>
                             </div>
-                          
+
                             <div class="input-wraper">
                                 <label for="subject" class="label">subject</label>
                                 <select name="fields" id="subject" class="select">
@@ -187,6 +335,14 @@
                                     <option value="other">other</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="input-wraper">
+                            <label for="" class="label">Present Address</label>
+                            <textarea name="" id="" class="textarea" placeholder="Street Name, City"></textarea>
+                        </div>
+                        <div class="input-wraper">
+                            <label for="" class="label">Permanent Address</label>
+                            <textarea name="" id="" class="textarea" placeholder="456 Street Name, City"></textarea>
                         </div>
                         <input type="submit" value="add student" class="cm-btn">
                     </form>
