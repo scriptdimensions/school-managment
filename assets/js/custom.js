@@ -34,32 +34,22 @@ jQuery(document).ready(function () {
 			$('.s-navi .await').toggleClass('active');
 		})
 
-		function swithtab(data,offsidebar) {
+		function swithtab(data, offsidebar) {
 			$('.content-tab').hide();
 			$('.content-tab[data=' + data + ']').fadeIn(200);
-			if(offsidebar){
+			if (offsidebar) {
 				$(".sidebar").removeClass("active");
 			}
 		}
 		function changetab(index) {
 			$('.sidebar .icons  > li').eq(index).addClass('active').siblings().removeClass('active');
 			$('.sidebar .item-bar > ul > li').eq(index).addClass('active').siblings().removeClass('active');
-			swithtab($('.sidebar .item-bar > ul > li').eq(index).find('.text').attr('data'),false)
+			swithtab($('.sidebar .item-bar > ul > li').eq(index).find('.text').attr('data'), false)
 		}
-		$('.sidebar  .item-bar li').each(function (index) {
-				$(this).find('.text').on('click', function (e) {
-					changetab(index);
-					$('.sidebar .item-bar .item').removeClass('show');
-					$('.sidebar .item-bar li .sub').slideUp(200);
-				});
-			});
+
+
 	
-		$('.sidebar .icon-bar .icons li').each(function (index) {
-				$(this).on('click', function (e) {
-					changetab(index);
-				});
-			});
-	
+
 
 		$(document).on("click", function (e) {
 			if (!$(e.target).is(".sidebar") && !jQuery(e.target).is(".sidebar *") && !jQuery(e.target).is(".menu-icon *")) {
@@ -88,17 +78,10 @@ jQuery(document).ready(function () {
 				item.toggleClass('show');
 			});
 			$('.sidebar .icons li ').eq(index).find('.tool').text(item.find('.text').text());
-
-			text.on('click', function () {
-				swithtab($(this).attr('data'),true);
-			});
-			subitem.on('click', function () {
-				swithtab($(this).attr('data'),true);
-			});
 		})
 
 		//
-
+		if (jQuery("#imageUpload-nav").length) {
 		document.getElementById('imageUpload').addEventListener('change', function (event) {
 			const file = event.target.files[0];
 			if (file) {
@@ -112,16 +95,17 @@ jQuery(document).ready(function () {
 				reader.readAsDataURL(file);
 			}
 		});
+	}
 
 		//
 
-		$('#filterInput').on('keyup', function() {
+		$('#filterInput').on('keyup', function () {
 			var filterValue = $(this).val().toLowerCase();
-	
-			$('.tables > ul').each(function() {
+
+			$('.tables > ul').each(function () {
 				var $ul = $(this);
 				var text = $ul.text().toLowerCase();
-				
+
 				if (text.indexOf(filterValue) > -1) {
 					$ul.show();
 				} else {

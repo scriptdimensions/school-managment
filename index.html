@@ -84,33 +84,41 @@
                     <li class="await"></li>
                 </ul>
                 <ul class="icons">
-                    <li class="active"><img src="assets/images/dashboard-icon.svg" alt="icon">
+                    <li class="active"> 
+                        <a href='index.html'>
+                            <img src="assets/images/dashboard-icon.svg" alt="icon">
+                        </a>
                         <span class="tool"></span>
                     </li>
-                    <li><img src="assets/images/teacher.svg" alt="icon"> <span class="tool"></span></li>
-                    <li><img src="assets/images/dashboard-user.svg" alt="icon"> <span class="tool"></span></li>
-                    <li><img src="assets/images/dashboard-user.svg" alt="icon"> <span class="tool"></span></li>
+                    <li>
+                        <a href='student-table.html'>
+                            <img src="assets/images/teacher.svg" alt="icon">
+                        </a> 
+                        <span class="tool"></span>
+                    </li>
+                    <li><a href=""><img src="assets/images/dashboard-user.svg" alt="icon"></a> <span class="tool"></span></li>
+                    <li><a href=""></a><img src="assets/images/dashboard-user.svg" alt="icon"> </a><span class="tool"></span></li>
                 </ul>
             </div>
             <div class="item-bar">
                 <ul>
                     <li class="item active">
                         <span class="span">
-                            <span class="text" data="dashboard-home">dashboard</span>
+                            <a href='index.html' class="text">dashboard</a>
                         </span>
                     </li>
                     <li class="item">
                         <span class="span">
-                            <span class="text" data="all-students">students</span>
+                            <a href='student-table.html' class="text">students</a>
                             <img src="assets/images/arrow-down.svg" alt="arrow">
                         </span>
                         <ul class="sub">
-                            <li data="add-form">add students</li>
+                            <li> <a href='add-student.html'> add students</a></li>
                         </ul>
                     </li>
                     <li class="item">
                         <span class="span">
-                            <span class="text">dashboard</span>
+                            <a href='#' class="text">dashboard</a>
                         </span>
                     </li>
                 </ul>
@@ -119,266 +127,6 @@
         <div class="main-content">
             <div class="dashboard-home content-tab" data="dashboard-home" style="display: block;">
                 dashboard-home
-            </div>
-            <div class="student-table content-tab" data="all-students">
-                <div class='table-wraper'>
-                    <div class="d-flex">
-                        <button class="filter"></button>
-                        <div class="table-search"><input type="text" placeholder="Search..." id="filterInput"></div>
-                        <div class="right"><button class="dote"></button></div>
-                    </div>
-                    <div class='tables'>
-                        <div class="head">
-                            <ul>
-                                <li class="name">name</li>
-                                <li>Father Name</li>
-                                <li class="gender">gender</li>
-                                <li>class</li>
-                                <li class="number">roll no</li>
-                              
-                                <li>B-Form Number</li>
-                                <li>date of birth</li>
-                                <li>Address</li>
-                                <li class='manipulate'>delete / edit</li>
-                            </ul>
-                        </div>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Ann Culhane</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Ahmad Rosser</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Zain Calzoni</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Leo Stanton</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Corey Stanton</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                        <ul>
-                            <li class="user-name-wraper">
-                                <div class="user-name"><span class="icon"></span>
-                                    <div>
-                                        <h5 class="title">Ann Culhane</h5>
-                                        <a href="mailto:examplegmail.com" class="sub">examplegmail.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>Father Name</li>
-                            <li class="gender">male</li>
-                            <li class="class">class 10</li>
-                            <li class="number">124</li>
-
-                            <li class="number">12345-6789012-3</li>
-                            <li class="number">12/07/2024
-                            </li>
-                            <li class="number">Street Name, City</li>
-                            <li class="manipulate"><button class="delete button"></button><button
-                                    class="edit button"></button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="registration-from content-tab" data="add-form">
-                <div class="form">
-                    <form action="">
-                        <div class="preview-container">
-                            <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
-                            <img id="imagePreview" src="" alt="Image Preview">
-                            <label for="imageUpload">Upload Image:</label>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="" class="label">full name</label>
-                                <input type="text" placeholder="John Doe" class="input">
-                            </div>
-                            <div class="input-wraper">
-                                <label for="" class="label">father name</label>
-                                <input type="text" placeholder="Michael Doe" class="input">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="" class="label">phone number</label>
-                                <input type="number" placeholder="0300-1234567" class="input">
-                            </div>
-                            <div class="input-wraper">
-                                <label for="" class="label">email</label>
-                                <input type="email" placeholder="example@gmail.com" class="input">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="" class="label">Father CNIC Number</label>
-                                <input type="number" placeholder="12345-6789012-3" class="input">
-                            </div>
-                            <div class="input-wraper">
-                                <label for="" class="label">Date Of Birth</label>
-                                <input type="date" placeholder="01/01/2000" class="input">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="" class="label">Registration Id</label>
-                                <input type="number" placeholder="2023001234" class="input">
-                            </div>
-                            <div class="input-wraper">
-                                <label for="" class="label">B-Form Number</label>
-                                <input type="text" placeholder="12345-6789012-3" class="input">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="" class="label">Whatsapp Number</label>
-                                <input type="number" placeholder="0300-1234567" class="input">
-                            </div>
-                            <div class="input-wraper">
-                                <label for="" class="label">Religion</label>
-                                <input type="text" placeholder="Islam/Christianity/Hinduism" class="input">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wraper">
-                                <label for="class" class="label">class</label>
-                                <select name="fields" id="class" class="select">
-                                    <option value="Class 1">Class 1</option>
-                                    <option value="Class 2">Class 2</option>
-                                    <option value="Class 3">Class 3</option>
-                                    <option value="Class 4">Class 4</option>
-                                    <option value="Class 5">Class 5</option>
-                                    <option value="Class 6">Class 6</option>
-                                    <option value="Class 7">Class 7</option>
-                                    <option value="Class 8">Class 8</option>
-                                    <option value="Class 9">Class 9</option>
-                                    <option value="Class 10">Class 10</option>
-                                </select>
-                            </div>
-
-                            <div class="input-wraper">
-                                <label for="subject" class="label">subject</label>
-                                <select name="fields" id="subject" class="select">
-                                    <option value="Mathematics">Mathematics</option>
-                                    <option value="Science">Science</option>
-                                    <option value="History">History</option>
-                                    <option value="Geography">Geography</option>
-                                    <option value="English">English</option>
-                                    <option value="Physical Education">Physical Education</option>
-                                    <option value="Art">Art</option>
-                                    <option value="Music">Music</option>
-                                    <option value="Computer Science">Computer Science</option>
-                                    <option value="Biology">Biology</option>
-                                </select>
-                            </div>
-                            <div class="input-wraper">
-                                <label for="gender" class="label">gender</label>
-                                <select name="fields" id="gender" class="select">
-                                    <option value="male">male</option>
-                                    <option value="female">female</option>
-                                    <option value="other">other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input-wraper">
-                            <label for="" class="label">Present Address</label>
-                            <textarea name="" id="" class="textarea" placeholder="Street Name, City"></textarea>
-                        </div>
-                        <div class="input-wraper">
-                            <label for="" class="label">Permanent Address</label>
-                            <textarea name="" id="" class="textarea" placeholder="456 Street Name, City"></textarea>
-                        </div>
-                        <input type="submit" value="add student" class="cm-btn">
-                    </form>
-                </div>
             </div>
         </div>
 

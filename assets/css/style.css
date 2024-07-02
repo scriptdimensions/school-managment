@@ -125,7 +125,6 @@ body {
     display: flex;
     width: 37px;
     object-fit: contain;
-    filter: invert(58%) sepia(16%) saturate(2443%) hue-rotate(105deg) brightness(95%) contrast(75%);
 }
 
 .dashboard-header .logo-wraper h4 {
@@ -181,9 +180,6 @@ body {
     justify-content: center;
 }
 
-.dashboard .content-tab {
-    display: none;
-}
 
 .error-class {
     border: 2px solid red;
@@ -306,7 +302,9 @@ body {
 .sidebar .item-bar .item {
     margin-bottom: 26px;
 }
-
+.sidebar .item-bar .item a{
+    color: var(--white);
+}
 .sidebar .item-bar .item .span {
     display: flex;
     align-items: center;
@@ -542,13 +540,14 @@ body {
 }
 
 .form {
-    max-width: 700px;
+    
     width: 100%;
     margin: auto;
 }
 
 .form-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -564,6 +563,7 @@ body {
 .input-wraper {
     margin-bottom: 18px;
     width: 100%;
+    max-width: calc(100% / 4 - 15px);
 }
 
 .select {
@@ -600,20 +600,19 @@ body {
 
 .registration-from {
     height: 100%;
-    display: flex;
-    padding: 100px 20px;
+    padding: 40px 20px;
 }
 
 .preview-container {
     display: block;
     background: antiquewhite;
     height: 100px;
-    margin: 0px auto;
+ 
     width: 100px;
     border-radius: 100px;
     background-color: #e9ecef;
     cursor: pointer;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     position: relative;
 }
 
@@ -657,11 +656,11 @@ body {
 
 .cm-btn {
     min-width: 131px;
-    background-color: #f1f1f1;
+    background-color: var(--dashblue);
     height: 41px;
     width: fit-content;
     font-size: 14px;
-    color: #4F4F4F;
+    color: #fff;
     padding: 0px 12px;
     text-align: center;
     text-transform: capitalize;
@@ -864,4 +863,36 @@ body {
 }
 .table-wraper .head li{
     font-weight: 500;
+}
+.page-title  *{
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: var(--gray900);
+    font-family: var(--sans);
+}
+.breadcrumbs {
+    display: flex;
+    gap: 20px;
+    MARGIN-BOTTOM: 20PX;
+}
+.breadcrumbs a{
+position: relative;
+font-size: 15px;
+color: var(--gray700);
+text-transform: capitalize;
+}
+.breadcrumbs a:after {
+    content: '>';
+    position: absolute;
+    inset: 0px -14px 0px;
+}
+.breadcrumbs a:nth-child(1)::after {
+ display: none;
+}
+.form-wraper {
+    padding: 20px;
+    background: #F4F7FC;
+    box-shadow: 0px 0px 27px  -21px #000000a1;
+    border-radius: 8px;
+    border: 1px solid var(--gray200);
 }
