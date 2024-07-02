@@ -74,6 +74,7 @@ jQuery(document).ready(function () {
 			subitem = item.find('.sub li');
 			button = item.find('img');
 			button.on('click', function () {
+				item.siblings().removeClass('show').find('.sub').slideUp(200);
 				item.find('.sub').toggle(200);
 				item.toggleClass('show');
 			});
@@ -81,7 +82,7 @@ jQuery(document).ready(function () {
 		})
 
 		//
-		if (jQuery("#imageUpload-nav").length) {
+		if (jQuery("#imageUpload").length) {
 		document.getElementById('imageUpload').addEventListener('change', function (event) {
 			const file = event.target.files[0];
 			if (file) {
