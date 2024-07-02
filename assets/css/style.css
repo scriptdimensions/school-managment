@@ -399,7 +399,7 @@ body {
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 500;
-    color: #5183b8;
+    color: var(--dashblue);
     align-items: center;
     justify-content: center;
 }
@@ -808,6 +808,10 @@ body {
     text-transform: capitalize;
     padding: 0px 10px;
 }
+.table-wraper  ul:nth-child(odd)  {
+   background-color: #EBF6FF;
+}
+
 .table-search {
     position: relative;
     border: 1px solid var(--gray200);
@@ -857,4 +861,7 @@ body {
 }
 .table-wraper  .right{
     margin-left: auto;
+}
+.table-wraper .head li{
+    font-weight: 500;
 }
