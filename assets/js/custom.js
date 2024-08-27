@@ -23,13 +23,14 @@ jQuery(document).ready(function () {
 		})
 		$('.sidebar .nav-item').each(function () {
 			let item = $(this);
-			item.find('.nav-link').on('click', function (e) {
+			if (item.has('.sub').length) {  item.find('.nav-link').on('click', function (e) {
 				e.preventDefault();
 				item.siblings().removeClass('active');
 				item.siblings().find('.sub').slideUp(200);
 				item.find('.sub').slideToggle(200);
 				item.toggleClass('active');
 			})
+		}
 		})
 		$(".counter .num").counterUp({ time: 3000 });
 		$('.navbar .navbar-item').each(function () {
@@ -76,7 +77,7 @@ jQuery(document).ready(function () {
 					pointHoverRadius: 6,
 					pointHoverBorderWidth: 3,
 					fill: 'origin',
-					label: "Fees Collection"
+					label: "Current Month Collection"
 				}
 				]
 			};
@@ -278,6 +279,7 @@ jQuery(document).ready(function () {
 				responsive: true,
 				maintainAspectRatio: false,
 				cutoutPercentage: 65,
+				cutout: '80%', // For a thinner ring, use string forma
 				rotation: -9.4,
 				animation: {
 					duration: 2000

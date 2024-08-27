@@ -344,11 +344,10 @@ body {
 .dashboard-summery {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  margin-bottom: 30px;
 }
 
 .dashboard-summery .box {
-    margin-bottom: 30px;
     background-color: #ffffff;
     padding: 22px 28px;
     border-radius: 4px;
@@ -407,12 +406,14 @@ body {
     color: #a8a8a8;
     margin-bottom: 2px;
     text-align: right;
+    text-transform: capitalize;
 }
 
 .dashboard-summery .item-content .item-number {
     font-size: 20px;
     font-weight: 500;
     color: #111111;
+    text-align: right;
 }
 
 .sidebar.active {
@@ -424,7 +425,7 @@ body {
     max-height: 22px;
     filter: invert(86%) sepia(33%) saturate(2452%) hue-rotate(330deg) brightness(102%) contrast(96%);
     transform: translateY(-3px);
-    object-fit: contain;
+    object-fit: contain;filter: brightness(0) saturate(100%) invert(56%) sepia(58%) saturate(784%) hue-rotate(0deg) brightness(106%) contrast(105%);
 }
 
 .sidebar>ul>li>a {
@@ -1319,6 +1320,7 @@ h4 {
     color: #9f9f9f;
     margin-bottom: 4px;
     font-size: 16px;
+    text-transform: capitalize;
 }
 
 .earning-report .item-content .single-item span {
@@ -1809,4 +1811,46 @@ h4 {
     border: 2px solid #111111;
     border-radius: 50%;
     transition: all 0.3s ease-out;
+}
+.dashboard-summery .box:nth-child(1) .item-icon{
+    color: #3B82F6;
+    background-color:#E0F2FE  ;
+}
+.dashboard-summery .box:nth-child(2)  .item-icon{
+    color: #10B981;
+    background-color:#D1FAE5  ;
+}
+.dashboard-summery .box:nth-child(3)  .item-icon{
+    color: #F59E0B;
+    background-color:#FEF3C7  ;
+}
+.dashboard-summery .box:nth-child(4)  .item-icon{
+    color: #EF4444 ;
+    background-color:#FEE2E2  ;
+}
+.dashboard-summery .box:nth-child(5)  .item-icon{
+    color: #6366F1 ;
+    background-color:#E0E7FF  ;
+}
+.dashboard-summery .box:nth-child(6) .item-icon{
+    color: #EC4899 ;
+    background-color:#FCE7F3 ;
+}
+.dashboard-title h1 {
+    font-size: 57px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Nunito", sans-serif !important;
+    color: var(--siderbbg);
+}
+.dashboard-title p {
+   font-size: 20px;
+    font-family: "Nunito", sans-serif !important;
+}
+.dashboard-title {
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background: #91c4d92e;
+    border-radius: 4px;
+    /* background: rgba(229, 229, 229, 0.75); */
 }

@@ -170,13 +170,21 @@
         <div class="sidebar">
             <ul>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.html" class="nav-link">
                         <img src="assets/images/gauge.png" alt="img" class="icon">
                         <span>dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="assets/images/webinar.png" alt="img" class="icon">
+                        <span>
+                            classes
+                        </span></a>
                     <ul class="sub">
-                        <li><a href="#"><i class="fas fa-angle-right"></i>admin</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>students</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>teachers</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>all classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>active classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>passout classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>request new class</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -217,38 +225,71 @@
                         <li>Admin</li>
                     </ul>
                 </div>
+                <div class="dashboard-title">
+                    <h1>welcome to nafay</h1>
+                    <p>Empowering your school management experience</p>
+                </div>
                 <div class="dashboard-summery">
                     <div class="box">
-                        <div class="item-icon bg-light-green ">
-                            <i class="fa-solid fa-user-group text-green"></i>
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-tents"></i>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">Students</div>
+                            <div class="item-title">total classes</div>
                             <div class="item-number"><span class="counter" data-num="150000"><span
                                         class="num">150000</span></span></div>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="item-icon bg-light-blue ">
-                            <i class="fa-solid fa-people-group text-blue "></i>
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-school"></i>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">teachers</div>
+                            <div class="item-title">total active classes</div>
                             <div class="item-number"><span class="counter" data-num="2250"><span
                                         class="num">2250</span></span></div>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="item-icon bg-light-red ">
-                            <i class="fa-solid fa-money-bill-wave text-red"></i>
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">teachers</div>
+                            <div class="item-title">total passout classes</div>
                             <div class="item-number"><span class="counter" data-num="19300"><span>$</span><span
                                         class="num">19300</span></span></div>
                         </div>
                     </div>
-
+                    <div class="box">
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-user-group "></i>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">total Students</div>
+                            <div class="item-number"><span class="counter" data-num="150000"><span
+                                        class="num">150000</span></span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-people-group  "></i>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">total active students</div>
+                            <div class="item-number"><span class="counter" data-num="2250"><span
+                                        class="num">2250</span></span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="item-icon  ">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">total passout students</div>
+                            <div class="item-number"><span class="counter" data-num="19300"><span>$</span><span
+                                        class="num">19300</span></span></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-7 pd-b-20">
@@ -257,10 +298,7 @@
                                 <div class="item-title">
                                     <h3>Earnings</h3>
                                 </div>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                        aria-expanded="false">...</a>
-                                </div>
+                              
                             </div>
                             <div class="earning-report">
                                 <div class="item-content">
@@ -269,27 +307,24 @@
                                         <span>75,000</span>
                                     </div>
                                     <div class="single-item pseudo-bg-red">
-                                        <h4>Fees Collection</h4>
+                                        <h4>current month Collection</h4>
                                         <span>15,000</span>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="earning-chart-wrap">
-                                <div class="chartjs-size-monitor"
-                                    style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                                    <div class="chartjs-size-monitor-expand"
-                                        style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                        <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                                <div class="chartjs-size-monitor">
+                                    <div class="chartjs-size-monitor-expand">
+                                        <div>
                                         </div>
                                     </div>
-                                    <div class="chartjs-size-monitor-shrink"
-                                        style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                        <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                    <div class="chartjs-size-monitor-shrink">
+                                        <div></div>
                                     </div>
                                 </div>
                                 <canvas id="earning-line-chart" width="722" height="320" class="chartjs-render-monitor"
-                                    style="display: block; width: 722px; height: 320px;"></canvas>
+                                    ></canvas>
                             </div>
                         </div>
                     </div>
@@ -300,19 +335,7 @@
                                     <div class="item-title">
                                         <h3>Students</h3>
                                     </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                            aria-expanded="false">...</a>
-
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#"><i
-                                                    class="fas fa-times text-orange-red"></i>Close</a>
-                                            <a class="dropdown-item" href="#"><i
-                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                            <a class="dropdown-item" href="#"><i
-                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="doughnut-chart-wrap">
                                     <div class="chartjs-size-monitor">
