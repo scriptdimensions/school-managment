@@ -268,7 +268,7 @@ jQuery(document).ready(function () {
 		if ($("#student-doughnut-chart").length) {
 
 			var doughnutChartData = {
-				labels: ["Female Students", "Male Students"],
+			//	labels: ["Female Students", "Male Students"],
 				datasets: [{
 					backgroundColor: ["#304ffe", "#ffa601"],
 					data: [45000, 105000],
@@ -279,7 +279,7 @@ jQuery(document).ready(function () {
 				responsive: true,
 				maintainAspectRatio: false,
 				cutoutPercentage: 65,
-				cutout: '80%', // For a thinner ring, use string forma
+				cutout: '70%', // For a thinner ring, use string forma
 				rotation: -9.4,
 				animation: {
 					duration: 2000

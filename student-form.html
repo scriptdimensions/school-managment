@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <div class="main-logo">
+                <a href="#"><img src="assets/images/dashboard-logo.png" alt=""></a>
+                <button type="button" class="item-link">
+                    <span class="icon-wrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+            <div class="right">
+                <ul class="navbar">
+                    <li class="navbar-item dropdown header-admin">
+                        <button class="dropdown-toggle" role="button">
+                            <div class="admin-title">
+                                <h5 class="item-title">Stevne Zone</h5>
+                                <span>active</span>
+                            </div>
+                            <div class="admin-img">
+                                <img src="https://www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/img/figure/admin.jpg"
+                                    alt="Admin">
+                            </div>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="item-header">
+                                <h6 class="item-title">Steven Zone</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="settings-list">
+                                    <li><a href="#"><i class="fa-regular fa-user"></i>My Profile</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-gear"></i>Account Settings</a></li>
+                                    <li><a href="login.html"><i class="fa-regular fa-right-from-bracket"></i>Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="assets/images/gauge.png" alt="img" class="icon">
+                        <span>dashboard</span></a>
+                    <ul class="sub">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>home</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>notification</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="assets/images/webinar.png" alt="img" class="icon">
+                        <span>
+                            classes
+                        </span></a>
+                    <ul class="sub">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>all classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>active classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>passout classes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>request new class</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="assets/images/classmates.png" alt="img" class="icon">
+                        <span>
+                            students
+                        </span></a>
+                    <ul class="sub">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>all students</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>passout students</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>addmission form</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div id="scrollUp"><i class="fa fa-angle-up"></i></div>
+        <div class="main-content">
+            <div class="registration-from content-tab">
+                <div class="breadcrumbs-area">
+                    <h3 class="title">Students</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>All Students</li>
+                    </ul>
+                </div>
+                <div class="form-wraper bg-box">
+                    <div class="box-title">
+                        <h2>Add New Students</h2>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <div class="preview-container">
+                                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required="">
+                                <img id="imagePreview" src="" alt="Image Preview">
+                                <label for="imageUpload">Upload Image:</label>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-wraper">
+                                    <label for="" class="label">full name</label>
+                                    <input type="text" placeholder="John Doe" class="input">
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">father name</label>
+                                    <input type="text" placeholder="Michael Doe" class="input">
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="" class="label">phone number</label>
+                                    <input type="number" placeholder="0300-1234567" class="input">
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">email</label>
+                                    <input type="email" placeholder="example@gmail.com" class="input">
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="" class="label">Father CNIC Number</label>
+                                    <input type="number" placeholder="12345-6789012-3" class="input">
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">Date Of Birth</label>
+                                    <input type="date" placeholder="01/01/2000" class="input">
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="" class="label">Registration Id</label>
+                                    <input type="number" placeholder="2023001234" class="input">
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">B-Form Number</label>
+                                    <input type="text" placeholder="12345-6789012-3" class="input">
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="" class="label">Whatsapp Number</label>
+                                    <input type="number" placeholder="0300-1234567" class="input">
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">Religion</label>
+                                    <input type="text" placeholder="Islam/Christianity/Hinduism" class="input">
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="class" class="label">class</label>
+                                    <select name="fields" id="class" class="select">
+                                        <option value="Class 1">Class 1</option>
+                                        <option value="Class 2">Class 2</option>
+                                        <option value="Class 3">Class 3</option>
+                                        <option value="Class 4">Class 4</option>
+                                        <option value="Class 5">Class 5</option>
+                                        <option value="Class 6">Class 6</option>
+                                        <option value="Class 7">Class 7</option>
+                                        <option value="Class 8">Class 8</option>
+                                        <option value="Class 9">Class 9</option>
+                                        <option value="Class 10">Class 10</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-wraper">
+                                    <label for="subject" class="label">subject</label>
+                                    <select name="fields" id="subject" class="select">
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="History">History</option>
+                                        <option value="Geography">Geography</option>
+                                        <option value="English">English</option>
+                                        <option value="Physical Education">Physical Education</option>
+                                        <option value="Art">Art</option>
+                                        <option value="Music">Music</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Biology">Biology</option>
+                                    </select>
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="gender" class="label">gender</label>
+                                    <select name="fields" id="gender" class="select">
+                                        <option value="male">male</option>
+                                        <option value="female">female</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-wraper">
+                                    <label for="" class="label">Present Address</label>
+                                    <textarea name="" id="" class="textarea" placeholder="Street Name, City"></textarea>
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="" class="label">Permanent Address</label>
+                                    <textarea name="" id="" class="textarea" placeholder="456 Street Name, City"></textarea>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div class="box-btns">
+                                <input type="submit" value="add student" class="cm-btn pri">   <input type="reset" value="reset" class="cm-btn sec">
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
