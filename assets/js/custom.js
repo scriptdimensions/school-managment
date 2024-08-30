@@ -45,6 +45,21 @@ jQuery(document).ready(function () {
 			$('html, body').animate({ scrollTop: 0 }, 500); // 500 milliseconds for smooth scroll
 		});
 		
+
+
+		const container = document.getElementById("login-container");
+const registerBtn = document.getElementById("register");
+
+const loginBtn = document.getElementById("login");
+
+registerBtn.addEventListener("click", () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener("click", () => {
+    container.classList.remove("active");
+});
+
 		///
 		/*-------------------------------------
 			  Line Chart 
