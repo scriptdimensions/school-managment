@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -104,89 +104,27 @@
         </div>
         <div id="scrollUp"><i class="fa fa-angle-up"></i></div>
         <div class="main-content">
-            <div class="registration-from content-tab">
+            <div class="all-subject-table content-tab">
                 <div class="breadcrumbs-area">
-                    <h3 class="title">Students</h3>
+                    <h3 class="title">Subjects</h3>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>All Students</li>
+                        <li>All Subjects</li>
                     </ul>
                 </div>
-                <div class="form-wraper bg-box">
-                    <div class="box-title">
-                        <h2>Add New Students</h2>
-                    </div>
-                    <div class="form">
-                        <form action="">
-                            <div class="preview-container">
-                                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required="">
-                                <img id="imagePreview" src="" alt="Image Preview">
-                                <label for="imageUpload">Upload Image:</label>
-                            </div>
-                            <div class="form-row">
+                <div class="cm-row">
+                    <div class='bg-box'>
+                        <div class="box-title">
+                            <h2>Add New Subject</h2>
+                        </div>
+                        <div class="form">
+                            <form action="">
                                 <div class="input-wraper">
-                                    <label for="" class="label">full name</label>
+                                    <label for="" class="label">Subject Name *</label>
                                     <input type="text" placeholder="John Doe" class="input">
                                 </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">father name</label>
-                                    <input type="text" placeholder="Michael Doe" class="input">
-                                </div>
-
-                                <div class="input-wraper">
-                                    <label for="" class="label">phone number</label>
-                                    <input type="number" placeholder="0300-1234567" class="input">
-                                </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">email</label>
-                                    <input type="email" placeholder="example@gmail.com" class="input">
-                                </div>
-
-                                <div class="input-wraper">
-                                    <label for="" class="label">Father CNIC Number</label>
-                                    <input type="number" placeholder="12345-6789012-3" class="input">
-                                </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">Date Of Birth</label>
-                                    <input type="date" placeholder="01/01/2000" class="input">
-                                </div>
-
-                                <div class="input-wraper">
-                                    <label for="" class="label">Registration Id</label>
-                                    <input type="number" placeholder="2023001234" class="input">
-                                </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">B-Form Number</label>
-                                    <input type="text" placeholder="12345-6789012-3" class="input">
-                                </div>
-
-                                <div class="input-wraper">
-                                    <label for="" class="label">Whatsapp Number</label>
-                                    <input type="number" placeholder="0300-1234567" class="input">
-                                </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">Religion</label>
-                                    <input type="text" placeholder="Islam/Christianity/Hinduism" class="input">
-                                </div>
-
-                                <div class="input-wraper">
-                                    <label for="class" class="label">class</label>
-                                    <select name="fields" id="class" class="select">
-                                        <option value="Class 1">Class 1</option>
-                                        <option value="Class 2">Class 2</option>
-                                        <option value="Class 3">Class 3</option>
-                                        <option value="Class 4">Class 4</option>
-                                        <option value="Class 5">Class 5</option>
-                                        <option value="Class 6">Class 6</option>
-                                        <option value="Class 7">Class 7</option>
-                                        <option value="Class 8">Class 8</option>
-                                        <option value="Class 9">Class 9</option>
-                                        <option value="Class 10">Class 10</option>
-                                    </select>
-                                </div>
-
                                 <div class="input-wraper">
                                     <label for="subject" class="label">subject</label>
                                     <select name="fields" id="subject" class="select">
@@ -203,33 +141,119 @@
                                     </select>
                                 </div>
                                 <div class="input-wraper">
-                                    <label for="gender" class="label">gender</label>
+                                    <label for="class" class="label">Select Class *</label>
+                                    <select name="fields" id="class" class="select">
+                                        <option value="Class 1">Class 1</option>
+                                        <option value="Class 2">Class 2</option>
+                                        <option value="Class 3">Class 3</option>
+                                        <option value="Class 4">Class 4</option>
+                                        <option value="Class 5">Class 5</option>
+                                        <option value="Class 6">Class 6</option>
+                                        <option value="Class 7">Class 7</option>
+                                        <option value="Class 8">Class 8</option>
+                                        <option value="Class 9">Class 9</option>
+                                        <option value="Class 10">Class 10</option>
+                                    </select>
+                                </div>
+                                <div class="input-wraper">
+                                    <label for="gender" class="label">Select Code</label>
                                     <select name="fields" id="gender" class="select">
                                         <option value="male">male</option>
                                         <option value="female">female</option>
                                         <option value="other">other</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="input-wraper">
-                                    <label for="" class="label">Present Address</label>
-                                    <textarea name="" id="" class="textarea" placeholder="Street Name, City"></textarea>
+                                <div class="box-btns">
+                                    <input type="submit" value="add Subject" class="cm-btn pri"> <input type="reset"
+                                        value="reset" class="cm-btn sec">
                                 </div>
-                                <div class="input-wraper">
-                                    <label for="" class="label">Permanent Address</label>
-                                    <textarea name="" id="" class="textarea" placeholder="456 Street Name, City"></textarea>
-                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class='table-wraper'>
+                        <div class="box-title">
+                            <h2>All Subjects</h2>
+                        </div>
+                        <div class="d-flex">
+                            <button class="filter"></button>
+                            <div class="table-search"><input type="text" placeholder="Search by Exam ..."
+                                    class="filterInput"></div>
+                            <div class="table-search"><input type="text" placeholder="Search by Subject ..."
+                                    class="filterInput"></div>
+                            <div class="table-search"><input type="text" placeholder="dd/mm/yyyy"
+                                    class="filterInput"></div>
+                            <button class="search-btn fw-btn-fill">search</button>
+                        </div>
+                        <div class='tables'>
+                            <div class="head">
+                                <ul>
+                                    <li class="">ID</li>
+                                    <li>subject Name</li>
+                                    <li class="">subject type</li>
+                                    <li>class</li>
+                                    <li class="number">date</li>
+                                    <li class='manipulate'>delete / edit</li>
+                                </ul>
                             </div>
-                            <div></div>
-                            <div class="box-btns">
-                                <input type="submit" value="add student" class="cm-btn pri">   <input type="reset" value="reset" class="cm-btn sec">
-                              </div>
-                        </form>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                            <ul>
+                                <li>#0025</li>
+                                <li>Finanace</li>
+                                <li>Theory</li>
+                                <li>6</li>
+                                <li>02/05/2001</li>
+                                <li class="manipulate"><button class="delete button"></button><button
+                                        class="edit button"></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-       
         </div>
 
     </div>
