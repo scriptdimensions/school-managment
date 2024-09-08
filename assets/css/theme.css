@@ -121,7 +121,7 @@ body {
 }
 
 .header {
-    position: relative;
+    position: sticky;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px -2px 12px #DDD;
@@ -232,9 +232,10 @@ body {
     height: auto;
     background-color: var(--siderbbg);
     transition: 0.3s;
+    height: calc(100vh - 70px);
+    position: sticky;
+    top: 70px;
 }
-
-
 
 .header .right {
     margin-left: auto;
@@ -2239,7 +2240,7 @@ p {
     background-color: #f8f8f8;
 }
 
-.from .textarea {
+.form .textarea {
     height: 100px;
     padding-top: 10px;
     margin-bottom: -10px;
@@ -2254,7 +2255,7 @@ p {
     text-transform: capitalize;
 }
 
-.from .preview-container label {
+.preview-container label {
     inset: auto 0px -27px 0px;
     font-size: 14px;
     text-align: center;
@@ -2308,56 +2309,67 @@ p {
 
 .all-subject-table .bg-box {
     width: 35%;
-}.all-subject-table .cm-row {
- gap: 30px;
-}.all-subject-table .table-wraper .head li{
-text-indent: 0px;
+}
+
+.all-subject-table .cm-row {
+    gap: 30px;
+}
+
+.all-subject-table .table-wraper .head li {
+    text-indent: 0px;
 }
 
 
 
-.login-container-wraper{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+.login-container-wraper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    background: #152942;
 }
+.login-container-wraper::after{
+    content:'';
+    position: absolute;
+    inset: 0px;
+    z-index: -1;    background-color: #152942;
+    filter: blur(16px);
 
-.login-container{
+}
+.login-container {
     background-color: white;
-    border-radius: 30px;
+ 
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 820px;
     max-width: 100%;
     min-height: 480px;
 }
 
-.login-container p{
+.login-container p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: .3px;
-    margin: 20px 0;
+    margin: 0px 8px;
     color: var(--white);
+    text-align: center;
 }
-
-.login-container span{
+.login-container span {
     font-size: 12px;
 }
 
-.login-container a{
+.login-container a {
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.login-container button{
-    background-color: #512da8;
+.login-container button {
+    background-color: var(--green);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -2367,15 +2379,22 @@ text-indent: 0px;
     letter-spacing: 0.5px;
     cursor: pointer;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 30px;
+    transition: 0.3s;
 }
-
-.login-container  button.hidden{
+.login-container button:hover {
+     border-color: var(--green);
+     color: var(--green);
+     background-color: transparent;
+}
+.login-container button.hidden {
     background-color: transparent;
     border-color: #fff;
 }
-
-.login-container form{
+.login-container button.hidden:hover{
+    background-color: var(--white);color: var(--green) !important;
+}
+.login-container form {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -2385,7 +2404,7 @@ text-indent: 0px;
     height: 100%;
 }
 
-.login-container input{
+.login-container input {
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -2401,49 +2420,60 @@ text-indent: 0px;
     top: 0;
     height: 100%;
     transition: all .6s ease-in-out;
-    padding: 0px 20px;
+
 }
 
-.sign-in{
+.login-container-wraper .sign-in {
     left: 0;
-    width: 50%;
-    z-index: 2;
+    width: 100%;
+    z-index: 2;display: flex;
+}.login-container-wraper .sign-in h1{
+    font-family: var(--nunito) !important;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
-
-.container.active .sign-in{
+.sign-in .form{
+width: 50%;
+padding: 0px 20px;
+}
+.container.active .sign-in {
     transform: translateX(100%);
 }
 
-.sign-up{
+.sign-up {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.login-container.active .sign-up{
+.login-container.active .sign-up {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: move .6s;
 }
 
-@keyframes move{
-    0%, 49.99%{
+@keyframes move {
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
-    50%, 100%{
+
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
 }
 
-.social-icons{
-    margin: 20px 0;
+.login-container-wraper .social-icons {
+    margin-bottom: 20px ;
 }
 
-.social-icons a{
+.login-container-wraper .social-icons a {
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
@@ -2454,68 +2484,27 @@ text-indent: 0px;
     height: 40px;
 }
 
-.toggle-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: all .6s ease-in-out;
-    border-radius: 150px 0 0 100px;
-    z-index: 1000;
-}
 
-.login-container.active .toggle-container{
-    transform: translateX(-100%);
-    border-radius: 0 150px 100px 0;
-}
 
-.toggle{
-    background-color: #512da8;
+.login-container-wraper .box {  
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, #20b573bf, var(--green));
     color: #fff;
     position: relative;
-    left: -100%;
     height: 100%;
-    width: 200%;
-    transform: translate(0);
-    transition: all .6s ease-in-out;
-}
-
-.login-container.active .toggle{
-    transform: translateX(50%);
-}
-
-.toggle-panel{
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    width: 42%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 0 30px;
-    text-align: center;
-    top: 0;
-    transform: translateX(0);
     transition: all .6s ease-in-out;
+    justify-content: center;
 }
 
-.toggle-left{
-    transform: translateX(-200%);
-}
 
-.login-container.active .toggle-left{
-    transform: translateX(0);
-}
 
-.toggle-right{
-    right: 0;
-    transform: translateX(0);
-}
 
-.login-container.active .toggle-right{
-    transform: translateX(200%);
+
+.registration-from .box-btns {
+    max-width: fit-content;
+    gap: 20px;
 }

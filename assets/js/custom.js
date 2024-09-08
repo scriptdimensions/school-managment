@@ -23,14 +23,15 @@ jQuery(document).ready(function () {
 		})
 		$('.sidebar .nav-item').each(function () {
 			let item = $(this);
-			if (item.has('.sub').length) {  item.find('.nav-link').on('click', function (e) {
-				e.preventDefault();
-				item.siblings().removeClass('active');
-				item.siblings().find('.sub').slideUp(200);
-				item.find('.sub').slideToggle(200);
-				item.toggleClass('active');
-			})
-		}
+			if (item.has('.sub').length) {
+				item.find('.nav-link').on('click', function (e) {
+					e.preventDefault();
+					item.siblings().removeClass('active');
+					item.siblings().find('.sub').slideUp(200);
+					item.find('.sub').slideToggle(200);
+					item.toggleClass('active');
+				})
+			}
 		})
 		$(".counter .num").counterUp({ time: 3000 });
 		$('.navbar .navbar-item').each(function () {
@@ -44,21 +45,22 @@ jQuery(document).ready(function () {
 		$('#scrollUp').on('click', function () {
 			$('html, body').animate({ scrollTop: 0 }, 500); // 500 milliseconds for smooth scroll
 		});
-		
 
+		if (jQuery("#register").length) {
 
-		const container = document.getElementById("login-container");
-const registerBtn = document.getElementById("register");
+			const container = document.getElementById("login-container");
+			const registerBtn = document.getElementById("register");
 
-const loginBtn = document.getElementById("login");
+			const loginBtn = document.getElementById("login");
 
-registerBtn.addEventListener("click", () => {
-    container.classList.add("active");
-});
+			registerBtn.addEventListener("click", () => {
+				container.classList.add("active");
+			});
 
-loginBtn.addEventListener("click", () => {
-    container.classList.remove("active");
-});
+			loginBtn.addEventListener("click", () => {
+				container.classList.remove("active");
+			});
+		}
 
 		///
 		/*-------------------------------------
@@ -283,7 +285,7 @@ loginBtn.addEventListener("click", () => {
 		if ($("#student-doughnut-chart").length) {
 
 			var doughnutChartData = {
-			//	labels: ["Female Students", "Male Students"],
+				//	labels: ["Female Students", "Male Students"],
 				datasets: [{
 					backgroundColor: ["#304ffe", "#ffa601"],
 					data: [45000, 105000],
