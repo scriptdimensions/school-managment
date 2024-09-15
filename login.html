@@ -14,38 +14,112 @@
 </head>
 
 <body>
-    <div class="login-container-wraper" >
-    <div class="login-container" id="login-container">
-        <div class="form-container sign-in">
-            <div class="box">
-                <h1>Welcome Back!</h1>
-                <p>Enter your personal details to use all of site features.</p>
-                <button class="hidden" id="login">Sign In</button>
-            </div> 
-            <div class="form">
-            <form action="#">
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+    <div class="login-container-wraper">
+        <div class="signin-container" id="signin-container">
+            <div class="form-container signin">
+                <div class="box">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features.</p>
+                    <button class="hidden button" id="move-signup">Sign UP</button>
                 </div>
-             
-                <span>or use your email and password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forgot Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div> </div>
-    </div></div>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="assets/js/chart.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+                <div class="form">
+                    <form action="#">
+                        <h1>Sign In</h1>
+
+                        <input type="email" placeholder="Email" class="input">
+                        <input type="password" placeholder="Password" class="input">
+                        <a href="#">Forgot Password?</a>
+                        <button class="button">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="signup-container hide" id="signup-container">
+            <h1>sign up</h1>
+            <div class="progres">
+                <div class="line"></div>
+            </div>
+            <div class="form-container signup">
+                <form action="#">
+                    <div class="form active">
+                        <h3>General Details</h3>
+                        <input type="text" placeholder="First Name" class="input">
+                        <input type="text" placeholder="Last Name" class="input">
+                        <input type="text" placeholder="Gender" class="input">
+                        <input type="date" placeholder="Date Of Birth" class="input">
+                        <input type="text" placeholder="phone numbe" class="input">
+                        <input type="text" placeholder="Whatsapp number" class="input">
+                    </div>
+                    <div class="form">
+                        <h3>Basic Details</h3>
+                        <input type="text" placeholder="Teacher Id Card Number" class="input">
+                        <input type="text" placeholder="Teacher Uniqueue Number" class="input">
+                        <input type="text" placeholder="teacher Education" class="input">
+                        <input type="text" placeholder="teacher grade" class="input">
+                        <input type="text" placeholder="Teacher School Name" class="input">
+                    </div>
+                    <div class="form">
+                        <h3>Address Details</h3>
+                        <input type="text" placeholder="Address" class="input">
+                        <input type="text" placeholder="City" class="input">
+                        <input type="text" placeholder="Province " class="input">
+                        <input type="text" placeholder="IP Address" class="input">
+                        <input type="text" placeholder="Latitude" class="input">
+                        <input type="text" placeholder="Longtitude" class="input">
+
+                    </div>
+                    <div class="form">
+                        <h3>Login Details</h3>
+                        <input type="text" placeholder="Username" class="input">
+                        <input type="text" placeholder="Email" class="input">
+                        <input type="text" placeholder="Password " class="input">
+                        <input type="text" placeholder="Confirm Password" class="input">
+                    </div>
+                    <div class="form">
+                        <h3>Classes Details</h3>
+                        <input type="text" placeholder="Simple Not About payment" class="input">
+                        <input type="text" placeholder="Choose Classes" class="input">
+                    </div>
+                    <div class="form">
+                        <h3>Payment methods</h3>
+                        <ul class="pay-method">
+                            <li>
+                              <label for="rd-1">
+                                <input type="radio" id="rd-1" name="method">
+                                <span>Easypaisa</span>
+                                <img src="assets/images/way-3.png" alt="icon">
+                              </label>
+                            </li>
+                            <li>
+                              <label for="rd-2">
+                                <input type="radio" id="rd-2" name="method">
+                                <span>Jazz Cash</span>
+                                <img src="assets/images/way-2.png" alt="icon">
+                              </label>
+                            </li>
+                            <li>
+                              <label for="rd-3">
+                                <input type="radio" id="rd-3" name="method">
+                                <span>AliedBank</span>
+                                <img src="assets/images/way-1.png" alt="icon">
+                              </label>
+                            </li>
+                          </ul>
+                    </div>
+                    
+                <div class="btns">
+                    <button class=" prev button">prev</button>
+                    <button class="right next button disabled">next</button>
+                    <input class="right submit button" value="submit" type="submit">
+                </div> </form>
+            </div>
+        </div>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

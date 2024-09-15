@@ -33,7 +33,10 @@ jQuery(document).ready(function () {
 				})
 			}
 		})
-		$(".counter .num").counterUp({ time: 3000 });
+		if ($('.counter').length) {
+			$(".counter .num").counterUp({ time: 3000 });
+		}
+
 		$('.navbar .navbar-item').each(function () {
 			let item = $(this),
 				button = item.find('.dropdown-toggle');
@@ -46,22 +49,66 @@ jQuery(document).ready(function () {
 			$('html, body').animate({ scrollTop: 0 }, 500); // 500 milliseconds for smooth scroll
 		});
 
-		if (jQuery("#register").length) {
+		if (jQuery("#move-signup").length) {
 
-			const container = document.getElementById("login-container");
-			const registerBtn = document.getElementById("register");
-
-			const loginBtn = document.getElementById("login");
-
-			registerBtn.addEventListener("click", () => {
-				container.classList.add("active");
-			});
-
-			loginBtn.addEventListener("click", () => {
-				container.classList.remove("active");
-			});
+			$('#move-signup').on('click', function () {
+				$('#signin-container').addClass('hide');
+				$('#signup-container').removeClass('hide');
+			})
 		}
+		$('.login-container-wraper .signup-container .next').on('click', function () {
+			$('.form.active').next('.form').addClass('active').prev().removeClass('active');
+			signupfrom()
+		})
+		$('.login-container-wraper .signup-container .prev').on('click', function () {
+			$('.form.active').prev('.form').addClass('active').next().removeClass('active');
+			signupfrom()
+		})
+		function signupfrom() {
+			$('.form.active').each(function () {
+				let form = $(this);
+				form.find('.input').on('keyup', function () {
+					managebtn()
+				});
+				setTimeout(function(){
+					managebtn()	
+				},2)
+			
+				function managebtn() {
+					let filledCount = 0; 
+					form.find('.input').each(function (index) {
+						if ($(this).val().length > 2) {
+							filledCount++;
+						}
+					});
+					if (filledCount == $('.form.active .input').length) {
+						$('.next').removeClass('disabled');
+					} else {
+						$('.next').addClass('disabled')
+					}
+				} 
+				
+			});
 
+			var indx = $('.login-container-wraper .signup-container .form.active').index() + 1;
+			var len = $('.login-container-wraper .signup-container .form').length;
+			const percentage = (indx / len) * 100;
+			$('.progres .line').css('width', percentage + '%')
+
+			if (indx == 1) {
+				$('.prev').addClass('disabled')
+				$('.prev').addClass('hide')
+			} else if (indx == len) {
+				$('.next').addClass('hide')
+				$('.submit').addClass('show')
+			} else {
+				$('.prev,.next').removeClass('disabled');
+				$('.next').removeClass('hide')
+				$('.submit').removeClass('show')
+			}
+
+		}
+		signupfrom()
 		///
 		/*-------------------------------------
 			  Line Chart 
