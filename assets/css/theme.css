@@ -2541,7 +2541,7 @@ p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
     position: relative;
     overflow: hidden;
-    width: 589px;
+    width: 660px;
     max-width: 100%;
     min-height: auto;
     position: absolute;
@@ -2600,12 +2600,12 @@ p {
 .pay-method {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .pay-method li {
     display: flex;
-    max-width: 237px;
+    max-width: calc(100% / 2 - 8px);
     width: 100%;
 }
 
@@ -2613,9 +2613,9 @@ p {
     display: flex;
     background-color: #6464641f;
     border-radius: 10px;
-    height: 66px;
+    height: 57px;
     width: 100%;
-    padding: 0px 15px 0px 26px;
+    padding: 0px 12px 0px 12px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -2629,15 +2629,16 @@ p {
 }
 
 .pay-method label span {
-    padding: 0px 18px;
+    padding: 0px 10px;
     color: #384455;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .pay-method label img {
     max-height: 38px;
     object-fit: contain;
-    max-width: 51px;
+    max-width: 43px;
+    margin-left: auto;
 }
 
 .pay-method label input::after {
@@ -2725,4 +2726,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     color: var(--gray900);
     font-weight: 500;
+}
+.login-container-wraper .list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+.login-container-wraper .list li:after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/check.png');
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    inset: 0px auto 0px 4px;
+    margin: auto;
+}
+.login-container-wraper .list li p{
+  margin: 0;
+  font-size: 700;
+}
+.login-container-wraper  .list {
+    padding: 20px 0px;
+    border: 0.5px solid #d3d3d3;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
