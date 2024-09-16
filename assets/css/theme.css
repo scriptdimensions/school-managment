@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
-
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 :root {
     --white: white;
     --black: #000000;
@@ -19,7 +19,7 @@
     --green: #20b573;
     --yellow: #FAB438;
     --navi-blue: #182e45;
-    --siderbbg: #0b3463;
+    --siderbbg: #0b3463;    --lilita: "Lilita One", sans-serif;
 }
 
 * {
@@ -2215,6 +2215,7 @@ p {
 .input-wraper {
     margin-bottom: 18px;
     width: 100%;
+    position: relative;
 }
 
 .label {
@@ -2250,9 +2251,10 @@ p {
     background-image: url('../images/select-arrow.svg');
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-position: calc(100% - 9px) 51%;
+    background-position: calc(100% - 15px) 51%;
     appearance: none;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .preview-container label {
@@ -2428,14 +2430,17 @@ p {
 }
 
 .login-container-wraper .input {
-    background-color: #eee;
-    border: none;
-    margin: 8px 0;
+    border: 0.5px solid #d3d3d3;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
     width: 100%;
     outline: none;
+}.login-container-wraper .select:hover,
+.login-container-wraper .select:focus,
+.login-container-wraper .input:focus,
+.login-container-wraper .input:hover {
+    background-color: #eee;
 }
 
 .login-container-wraper .input::placeholder {
@@ -2461,8 +2466,11 @@ p {
     margin-bottom: 20px;
     text-transform: capitalize;
     text-align: center;
+    color: var(--green);
 }
-
+.login-container-wraper .box h1 {
+      color: var(--white);
+}
 .signin .form {
     width: 50%;
     padding: 0px 20px;
@@ -2592,8 +2600,7 @@ p {
 .pay-method {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pay-method li {
@@ -2639,20 +2646,83 @@ p {
     position: absolute;
     inset: 0px;
     border: 1px solid #D9E1E7;
-}.pay-method label input:checked:after {
+}
+
+.pay-method label input:checked:after {
     background-color: var(--navi-blue);
     border-width: 4px;
 }
-select {
-    background-image: url('../images/arrow-down.png');
-    background-position: calc(100% - 34px) 50%;
-    background-size: 15px 7.5px;
-    background-repeat: no-repeat;
-    appearance: none;
-}
+
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url('../images/date.png');
     cursor: pointer;
+}
+
+.input-wraper .eye {
+    height: 21px;
+    width: 20.46px;
+    position: absolute;
+    inset: 0px 15px 0px auto;
+    background-image: url('../images/bi_eye-fill.png');
+    display: block;
+    margin: auto;
+    /* opacity: 0.6; */
+    background-size: contain;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(356deg) brightness(98%) contrast(102%);
+}
+
+.input-wraper .eye.active {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.input-wraper .eye.show:after {
+    inset: -2px 0px 0px 9px;
+    height: 25px;
+    content: '';
+    transform: rotate(45deg);
+    position: absolute;
+    width: 1px;
+    background-color: var(--white);
+}
+
+
+.cm-logo {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 52.58px;
+    font-family: var(--lilita);
+    color: var(--white) !important;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.cm-logo p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 179.5%;
+    color: var(--white);
+    text-align: center;
+}
+
+.cm-logo span {
+    color: var(--green);
+}
+
+.login-container-wraper .cm-logo {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+.login-container-wraper .forget{
+    font-size: 14px;
+    color: var(--gray900);
+    font-weight: 500;
 }

@@ -105,10 +105,29 @@ jQuery(document).ready(function () {
 				$('.prev,.next').removeClass('disabled');
 				$('.next').removeClass('hide')
 				$('.submit').removeClass('show')
+				$('.prev').removeClass('hide')
 			}
 
 		}
 		signupfrom()
+
+		$('.eye').each(function () {
+			let eye = $(this);
+			let input = eye.siblings('input');
+			input.on('keyup', function () {
+				if ($(this).val().length > 0) {
+					eye.addClass('active')
+				} else {
+					eye.removeClass('active')
+				}
+			})
+			$(this).on('click', function () {
+				var $input = $(this).siblings('input');
+				var type = $input.attr('type') === 'password' ? 'text' : 'password';
+				$input.attr('type', type);
+				$(this).toggleClass('show');
+			});
+		});
 		///
 		/*-------------------------------------
 			  Line Chart 
